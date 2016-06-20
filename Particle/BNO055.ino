@@ -230,15 +230,21 @@ void loop()
 
   // Output data to dashboard
   Particle.publish("X-Axis of rotation : ", String(xGyro));
+  delay(1000);
   Particle.publish("Y-Axis of rotation : ", String(yGyro));
+  delay(1000);
   Particle.publish("Z-Axis of rotation : ", String(zGyro));
-  delay(500);
+  delay(1000);
   Particle.publish("Acceleration in X-Axis : ", String(xAccl));
+  delay(1000);
   Particle.publish("Acceleration in Y-Axis : ", String(yAccl));
+  delay(1000);
   Particle.publish("Acceleration in Z-Axis : ", String(zAccl));
-  delay(500);
+  delay(1000);
   Particle.publish("Magnetic field in X-Axis : ", String(xMag));
+  delay(1000);
   Particle.publish("Magnetic field in Y-Axis : ", String(yMag));
+  delay(1000);
   Particle.publish("Magnetic filed in Z-Axis : ", String(zMag));
-  delay(500);
+  delay(1000);
 }
